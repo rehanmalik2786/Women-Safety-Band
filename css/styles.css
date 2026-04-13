@@ -1,0 +1,67 @@
+/* ============================================
+   WOMEN SAFETY BAND — Global Styles
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:     #0a0a0f;
+  --bg2:    #12121a;
+  --bg3:    #1a1a26;
+  --bg4:    #22223a;
+  --red:    #cc3333;
+  --red2:   #ff4444;
+  --red3:   #ff2222;
+  --text:   #f0f0f0;
+  --text2:  #a0a0b8;
+  --text3:  #606078;
+  --green:  #22cc77;
+  --orange: #ff8833;
+  --blue:   #3388ff;
+  --border: #2a2a3a;
+  --card:   #16161f;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* ---- Animations ---- */
+@keyframes pulseOut {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  100% { transform: scale(1.6); opacity: 0;   }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1;   }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes loading {
+  0%   { width: 0;    }
+  50%  { width: 40px; }
+  100% { width: 0;    }
+}
+
+/* ---- Inputs ---- */
+input:focus {
+  border-color: #cc3333 !important;
+  box-shadow: 0 0 0 2px #cc333322;
+}
+
+/* ---- Buttons ---- */
+button:active {
+  transform: scale(0.97);
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 2px; }
